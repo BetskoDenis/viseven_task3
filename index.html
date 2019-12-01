@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="gallery_block">
+    <h1>Welcome to Viseven <span>imagestock</span></h1>
+    <div class="gallery__wrapper  " id="gallery__wrapper">
+        <figure class="gallery_item span1" data-local="1">
+            <img src="img/Layer2.jpg" alt="">
+            <figcaption class="info_hover">
+                <div class="comments_hover"><span></span></div>
+                <div class="dislike_hover"><span></span></div>
+                <div class="like_hover"><span></span></div>
+            </figcaption>
+        </figure>
+        <figure class="gallery_item span2" data-local="2">
+            <img src="img/Layer3.jpg" alt="">
+            <figcaption class="info_hover">
+                <div class="comments_hover"><span></span></div>
+                <div class="dislike_hover"><span></span></div>
+                <div class="like_hover"><span></span></div>
+            </figcaption>
+        </figure>
+        <figure class="gallery_item span3" data-local="3">
+            <img src="img/Layer4.jpg" alt="">
+            <figcaption class="info_hover">
+                <div class="comments_hover"><span></span></div>
+                <div class="dislike_hover"><span></span></div>
+                <div class="like_hover"><span></span></div>
+            </figcaption>
+        </figure>
+        <figure class="gallery_item span4" data-local="4">
+            <img src="img/Layer4.jpg" alt="">
+            <figcaption class="info_hover">
+                <div class="comments_hover"><span></span></div>
+                <div class="dislike_hover"><span></span></div>
+                <div class="like_hover"><span></span></div>
+            </figcaption>
+        </figure>
+        <figure class="gallery_item span5" data-local="5">
+            <img src="img/Layer5.jpg" alt="">
+            <figcaption class="info_hover">
+                <div class="comments_hover"><span></span></div>
+                <div class="dislike_hover"><span></span></div>
+                <div class="like_hover"><span></span></div>
+            </figcaption>
+        </figure>
+        <figure class="gallery_item span6" data-local="6">
+            <img src="img/Layer7.jpg" alt="">
+            <figcaption class="info_hover">
+                <div class="comments_hover"><span></span></div>
+                <div class="dislike_hover"><span></span></div>
+                <div class="like_hover"><span></span></div>
+            </figcaption>
+        </figure>
+        <figure class="gallery_item span7" data-local="7">
+            <img src="img/Layer8.jpg" alt="">
+            <figcaption class="info_hover">
+                <div class="comments_hover"><span></span></div>
+                <div class="dislike_hover"><span></span></div>
+                <div class="like_hover"><span></span></div>
+            </figcaption>
+        </figure>
+        <figure class="gallery_item span8" data-local="8">
+            <img src="img/Layer9.jpg" alt="">
+            <figcaption class="info_hover">
+                <div class="comments_hover"><span></span></div>
+                <div class="dislike_hover"><span></span></div>
+                <div class="like_hover"><span></span></div>
+            </figcaption>
+        </figure>
+        <div class="add_item span9" id="add_item">
+            <input type="file" name="file_input" class="add_plus" id="add_plus">
+            <label class="add_plus_label" for="add_plus"> </label>
+            <p>Add your Picture</p>
+        </div>
+        <div id="modal" class='modal ' data-modal="1">
+            <div class="modal_button_close" id="modal_button_close">
+            </div>
+            <div class="modal_image" id="modal_image">
+                <div class="line_like_dislike" id="line_like_dislike">
+                    <div class="dislike_block" id="dislike_block">
+                        <span id="dislike"></span>
+                    </div>
+                    <div class="like_block" id="like_block">
+                        <span id="like"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_comments">
+                <h3>Comments: <span id="comments_quantity"></span></h3>
+                <div class="comments_tape" id="comments_tape">
+                </div>
+                <form class="modal_form">
+                    <input type="name" name="name" id="input_name" class="input_name"
+                           placeholder="Type your nickname here..." required>
+                    <div class="message_input_wrapper">
+                        <textarea name="" id="message_input" cols="" rows="" class="message_input"
+                                  placeholder="Write your comment here..." required></textarea>
+                        <button type="button" class="send_message" id="send_message"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>
